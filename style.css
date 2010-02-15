@@ -1,0 +1,225 @@
+/*
+Theme Name: Arjuna
+Theme URI: http://www.raasukutty.com/
+Description: Arjuna, means "white, pure" in Sanskrit. This is a theme with the base as white.
+Version: 0.1
+Author: Rajeshwaran S P
+Author URI: http://www.raasukutty.com/blog
+Tags: white, two-columns, right-sidebar, fixed-width
+
+	Arjuna
+	 http://www.raasukutty.com/blog
+
+	This theme was designed and built by Rajeshwaran S P,
+	whose blog you will find at http://www.raasukutty.com/blog
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* Begin - formatting general */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:"Lucida Grande", Verdana, "Helvetica Nueue", Helvetica, sans-serif;
+	font-size:12px;
+	line-height:1.5em;
+}
+
+h1, h2, h3 {
+	font-family:Georgia, serif;	
+}
+
+p {
+	font-size:1em;
+	line-height:1.5em;
+	margin-bottom:1.5em;
+}
+
+p strong {
+	border-bottom:1px dotted #000000;
+	font-size:1.25em;
+}
+
+a, a:active, a:link, a:visited {
+	color:#000000;
+	text-decoration:none;
+	border-bottom:1px solid #E5CB00;
+}
+
+a:hover {
+	border-bottom:1px solid #000000;
+}
+
+pre {
+	margin-bottom:1.5em;
+}
+
+ul, ol {
+	margin-bottom:1.5em;
+}
+
+ul li {
+	margin:0.25em 1em 0.25em 0;	
+}
+
+ol li {
+	margin:0.25em 1em 0.25em 0;	
+}
+
+/* End - formatting general */
+
+/* Begin - structure */
+
+#page-container {
+	width:990px;
+	margin:auto;	
+}
+
+#header {
+	border-bottom:1px dotted #000000;
+}
+
+#content {
+	width:625px;	
+}
+
+#sidebar {
+	width:325px;
+	float:right;
+	border-left:1px dotted #000000;	
+}
+
+/* End - structure */
+
+/* Begin - Page formatting */
+
+#blog-title {
+	font-family:Georgia, serif;
+	line-height:1.25em;
+	font-size:4em;
+}
+
+.blog-description {
+	font-size:2em;
+	margin-bottom:0.5em;
+}
+
+.page-title {
+	font-size:2em;
+	margin:0.5em 0;
+}
+.post-title{
+	font-size:2.5em;
+	line-height:1.25em;
+}
+
+.post-title a {
+	text-decoration:none;
+	border-bottom:none;
+}
+
+.post-title a:hover{
+	border-bottom:1px solid #000000;
+}
+
+.post {
+	/*margin:1em 0 1em 0; */
+	padding:1em 0;
+	border-bottom:1px dotted #000000;
+}
+
+.post ul li {
+	margin-left:2em;
+}
+
+.post ol li {
+	margin-left:2em;
+}
+
+.author-info {
+	border-bottom:1px dotted #ff0000;
+}
+
+#sidebar ul li {
+	list-style-type:none;
+}
+
+#sidebar {
+	padding-left:1.5em;
+}
+
+#sidebar ul {
+	padding-top:0.5em;
+}
+
+.navigation {
+	padding:0.5em 0 0.5em 0;	
+}
+
+.alignright {
+	text-align:right;
+	float:right;
+}
+
+.alignleft {
+	text-align:left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	border-top:1px dotted #000000;
+}
+
+/* End - Page formatting */
+
+/* Begin - Comment formatting */
+
+#comments-info {
+	padding-top:1em;
+}
+
+.comment-list li {
+	padding:0.5em 0;
+	list-style-type:none;
+}
+
+.comment-text {
+	padding-top:1em;
+}
+
+.comment-text p {
+	padding:0 2em;
+	line-height:1em;
+}
+
+.author-comment {
+	margin-left:3em;
+	background-color:#cccccc;	
+}
+
+.author-comment a:active, .author-comment a:link, .author-comment a:visited {
+	border-bottom:1px solid #ff0000;
+}
+
+.author-comment a:hover {
+	border-bottom:1px solid #000000;
+}
+
+.comment-form-title {
+	padding-top:1em;
+}
+
+/* End - Comment formatting */
