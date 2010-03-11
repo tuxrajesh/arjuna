@@ -10,6 +10,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<meta name="description" content="<?php bloginfo('description'); ?>" /> 
+	<meta name="blogname" content="<?php bloginfo('name'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -18,7 +20,11 @@
 
 <body>
 	<div id="page-container">
-		<div id="header">
-			<div id="blog-title"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
-			<p class="blog-description"><?php bloginfo('description'); ?></p>
+		<div id="header" class="clearfix">
+			<span class="blog-title"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span><span class="blog-description"><?php bloginfo('description'); ?></span>
+		</div>
+		<div id="top-nav">
+			<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
+			<?php wp_list_pages('title_li=' ); ?>
+			<?php wp_list_categories("orderby=count&order=desc&title_li="); ?>
 		</div>

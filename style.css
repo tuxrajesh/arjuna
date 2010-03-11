@@ -83,6 +83,7 @@ ol li {
 
 #header {
 	border-bottom:1px dotted #000000;
+	padding-bottom:0.75em;
 }
 
 #content {
@@ -99,15 +100,66 @@ ol li {
 
 /* Begin - Page formatting */
 
-#blog-title {
+#header {
+	background-color:#333333;
+	text-align:center;
+}
+
+.blog-title {
 	font-family:Georgia, serif;
 	line-height:1.25em;
 	font-size:4em;
+	color:#ff0000;
+}
+
+.blog-title a {
+	color:#E5CB00;
+	border-bottom:1px solid #ff0000;
+}
+
+.blog-title a:hover {
+	color:#ff0000;
+	border-bottom:1px solid #E5CB00;
+}
+
+#top-nav {
+	font-size:1.2em;
+	background-color:#cccccc;
+	text-align:center;
+	padding:0.25em 0 0.25em 0;
+	border-bottom:1px dotted #000000;
+}
+
+#top-nav li {
+	display:inline;
+	list-style-type:none;	
+}
+
+#top-nav li a, #top-nav li a:link, #top-nav li a:active, #top-nav li a:visited {
+	text-decoration:none;
+	padding:0 0.5em 0 0.5em;
+	border-bottom:0;	
+}
+
+#top-nav li a:hover {
+	color:#ffffff;
+	background-color:#333333;
 }
 
 .blog-description {
 	font-size:2em;
 	margin-bottom:0.5em;
+	color:#ffffff;
+	padding-left:1em;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
 }
 
 .page-title {
