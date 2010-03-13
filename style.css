@@ -72,6 +72,12 @@ ol li {
 	margin:0.25em 1em 0.25em 0;	
 }
 
+blockquote {
+	margin:1em;
+	padding:0.5em;
+	background-color:#cccccc;
+}
+
 /* End - formatting general */
 
 /* Begin - structure */
@@ -143,6 +149,11 @@ ol li {
 
 #top-nav li a:hover {
 	color:#ffffff;
+	background-color:#333333;
+}
+
+.current {
+	color:#ffffff !important;
 	background-color:#333333;
 }
 

@@ -14,6 +14,17 @@
 	<meta name="blogname" content="<?php bloginfo('name'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<script language="javascript" type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/jquery-1.4.2.min.js"></script>
+	<script language="javascript">
+		$(document).ready(function(){
+			$("#top-nav > li").find("a").each(function(){
+				$href = $(this).attr('href');
+				if($href == window.location.href){
+					$(this).addClass("current");
+				}
+			});	
+		});
+	</script>
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 </head>
@@ -21,7 +32,8 @@
 <body>
 	<div id="page-container">
 		<div id="header" class="clearfix">
-			<span class="blog-title"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span><span class="blog-description"><?php bloginfo('description'); ?></span>
+			<span class="blog-title"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span>
+			<span class="blog-description"><?php bloginfo('description'); ?></span>
 		</div>
 		<div id="top-nav">
 			<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
